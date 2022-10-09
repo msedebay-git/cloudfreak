@@ -13,9 +13,9 @@ pipeline {
       }
     }
 
-    stage('build dockerfile') {
+    stage('build container') {
       steps {
-        sh 'docker build -t my-firstproject .'
+        sh 'docker build -t my-first-image .'
       }
     }
 
