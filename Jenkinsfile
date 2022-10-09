@@ -13,11 +13,5 @@ pipeline {
       }
     }
 
-    stage('build container') {
-      steps {
-        sh 'docker build -t my-first-app .'
-      }
-    }
-
   }
 }
