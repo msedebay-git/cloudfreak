@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('build dockerfile') {
+      steps {
+        sh 'docker build -t my-firstproject .'
+      }
+    }
+
   }
 }
